@@ -17,7 +17,7 @@ ORDER BY SALARY ASC;
 
 --display all employees based on salary in asc order
 SELECT * FROM EMPLOYEES
-ORDER BY SALARY DESC;
+ORDER BY SALARY ASC;
 
 --display all the employees based on their firstname desc
 SELECT * FROM EMPLOYEES
