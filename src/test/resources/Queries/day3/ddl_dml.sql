@@ -10,7 +10,7 @@ create table syntax:
     );
 */
 --- CREATE TABLE ----
-CREATE TABLE scrumteam_jamal(
+CREATE TABLE scrumteam(
     emp_id Integer PRIMARY KEY,
     first_name varchar(30) not null,
     last_name varchar(20) not null ,
@@ -89,7 +89,6 @@ WHERE EMP_ID = 1;
 ALTER TABLE SCRUMTEAM RENAME COLUMN salary TO annual_salary;
 
 --DROP COLUMN
-
 ALTER TABLE SCRUMTEAM DROP COLUMN gender;
 
 --RENAME TABLE
@@ -101,7 +100,6 @@ SELECT * FROM agileteam;
 TRUNCATE TABLE agileteam;
 
 --DROP TABLE
-
 DROP TABLE agileteam;
 
 commit;

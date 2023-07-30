@@ -1,9 +1,9 @@
 SELECT * FROM EMPLOYEES;
 
 /*
-    1.Column alieases --> it is temporary name to show in display
+    1.Column aliases --> it is temporary name to show in display
 
-    2.Table alieases which we will learn later
+    2.Table aliases which we will learn later
         Employees --> E
 
  */
@@ -70,7 +70,7 @@ select email, length(email) as email_length FROM EMPLOYEES;
 
     --how many question ??
     SELECT COUNT(*) FROM EMPLOYEES
-    WHERE FIRST_NAME LIKE '______'
+    WHERE FIRST_NAME LIKE '______';
 
 --display initial from firstname and lastname --> S.K.  ---- N.K.
 
@@ -79,7 +79,7 @@ select email, length(email) as email_length FROM EMPLOYEES;
 
     select substr(FIRST_NAME,0,1)||'.'||substr(LAST_NAME,0,1)||'.' as initials from EMPLOYEES;
 
-    select substr(FIRST_NAME,1,1)||'.'||substr(LAST_NAM  E,1,1)||'.' as initials from EMPLOYEES;
+    select substr(FIRST_NAME,1,1)||'.'||substr(LAST_NAME,1,1)||'.' as initials from EMPLOYEES;
 
     select FIRST_NAME,substr(FIRST_NAME,-2,2) from EMPLOYEES;
 
