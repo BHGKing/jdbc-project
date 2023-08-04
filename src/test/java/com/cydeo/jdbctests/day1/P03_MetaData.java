@@ -6,7 +6,7 @@ import java.sql.*;
 
 public class P03_MetaData {
     //CONNECTION STRING
-    String dbUrl = "jdbc:oracle:thin:@54.86.2.212:1521:XE";
+    String dbUrl = "jdbc:oracle:thin:@100.27.30.151:1521:XE";
     String dbUsername ="hr";
     String dbPassword = "hr";
 
@@ -40,7 +40,7 @@ public class P03_MetaData {
             System.out.println(rsmd.getColumnName(i));
         }
 
-        /*
+        /**
               ResultSet --> it holds table data
                     rs.next() --> it iterate each row dynamically  (with while loop)
                        rs.getString(columnIndex) --> to retrieve data itself
@@ -71,9 +71,6 @@ public class P03_MetaData {
             System.out.println();
 
         }
-
-
-
 
         //close connection
         rs.close();

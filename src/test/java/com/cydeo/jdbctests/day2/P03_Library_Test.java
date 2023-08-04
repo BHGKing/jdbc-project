@@ -24,7 +24,7 @@ public class P03_Library_Test {
         /*
             Actual comes from UI with selenium,cucumber etc.
          */
-        String actualBooksCount = "6274";
+        String actualBooksCount = "11622"; //updated to 11622 from 6274
 
         Assertions.assertEquals(expectedBooksCount,actualBooksCount);
 

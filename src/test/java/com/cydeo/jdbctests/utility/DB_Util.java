@@ -34,13 +34,12 @@ public class DB_Util {
     }
 
 
-
     /**
      * Create connection method , just checking one connection successful or not
      */
     public static void createConnection(){
 
-        String url      = "jdbc:oracle:thin:@54.86.2.212:1521:XE"; ;
+        String url      = "jdbc:oracle:thin:@100.27.30.151:1521:XE"; ;
         String username = "hr" ;
         String password = "hr" ;
 
@@ -140,7 +139,6 @@ public class DB_Util {
     }
 
 
-
     /**
      * // Get all the Column names into a list object
      * @return  List<String>
@@ -196,7 +194,6 @@ public class DB_Util {
     }
 
 
-
     /**
      * getting the cell value according to row num and column index
      * @param rowNum  row number to get the data from
@@ -219,6 +216,7 @@ public class DB_Util {
         return cellValue ;
 
     }
+
 
     /**
      * getting the cell value according to row num and column name
@@ -253,7 +251,6 @@ public class DB_Util {
 
     }
 
-    //
 
     /**
      * getting entire column data as list according to column number
@@ -282,6 +279,7 @@ public class DB_Util {
         return columnDataLst ;
 
     }
+
 
     /**
      * getting entire column data as list according to column Name
@@ -340,6 +338,7 @@ public class DB_Util {
 
     }
 
+
     /**
      * Save entire row data as Map<String,String>
      * @param rowNum row number
@@ -371,6 +370,8 @@ public class DB_Util {
 
         return rowMap ;
     }
+
+
     /**
      * We know how to store one row as map object
      * Now Store All rows as List of Map object

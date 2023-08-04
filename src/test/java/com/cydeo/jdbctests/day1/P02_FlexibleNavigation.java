@@ -7,7 +7,7 @@ import java.sql.*;
 public class P02_FlexibleNavigation {
 
     //CONNECTION STRING
-    String dbUrl = "jdbc:oracle:thin:@54.86.2.212:1521:XE";
+    String dbUrl = "jdbc:oracle:thin:@100.27.30.151:1521:XE";
     String dbUsername ="hr";
     String dbPassword = "hr";
 
@@ -26,7 +26,7 @@ public class P02_FlexibleNavigation {
 
         //what if I want to get last row data ?
         //last method
-        /*
+        /**
         ResultSet.TYPE_SCROLL_INSENSITIVE --> to do flexible navigation between rows
         ResultSet.CONCUR_READ_ONLY --> do not update anything from database, only read
          */
